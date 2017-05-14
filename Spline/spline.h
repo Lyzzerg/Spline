@@ -43,6 +43,7 @@ namespace Spline {
 	private: System::Windows::Forms::TextBox^  change_step;
 
 	private: System::Windows::Forms::Label^  label7;
+
 			 double step_ch;
 
 	protected:

@@ -102,7 +102,7 @@ void TSpline::freeMemory()
 
 double calculateFunction(double x)
 {
-	double result = pow(x, 5) - 3 * pow(x, 4) - 10 * pow(x, 3) + 50 * x*x + 100 * x;
-	result /= (x*x + 2 * x + 2);
+	double result = 1/6.0 * pow(x, 5) + 3 * pow(x, 4) + 1/10.0 * pow(x-2, 3) - 3 * x*x + x + 2;
+	result /= (1/2.0*pow(x,4)+pow(x,3) + x*x + 4/3.0*x+1);
 	return result;
 }
